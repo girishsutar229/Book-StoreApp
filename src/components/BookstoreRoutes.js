@@ -16,7 +16,7 @@ function BookstoreRoutes() {
     const location = useLocation();
     return (
         <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/Book-StoreApp" element={<HomePage />} />
             <Route path="/auth/login" element={<LoginPage />} />
             <Route path="/auth/register" element={<RegisterPage />} />
             <Route path="/cart" element={<CartPage />} />

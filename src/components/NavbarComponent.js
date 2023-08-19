@@ -46,7 +46,7 @@ function NavbarComponent(props) {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <LinkContainer to="/">
+                    <LinkContainer to="/Book-StoreApp">
                         <Navbar.Brand className="text-info">
                             <img
                                 className="p-1"
@@ -63,7 +63,7 @@ function NavbarComponent(props) {
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="me-auto">
-                                    <LinkContainer to="/">
+                                    <LinkContainer to="/Book-StoreApp">
                                         <Button
                                             variant="link"
                                             className="nav-item"
