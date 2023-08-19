@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "../css/HomePage.css";
+import Typewriter from "typewriter-effect";
 
 function HomePage() {
     const [cartItemsNumber, setCartItemsNumber] = useState(0);
@@ -28,8 +29,21 @@ function HomePage() {
                 <main className="main-homepage pt-5">
                     <Row className="main-content d-flex justify-content-start align-items-center">
                         <Col xs={1}></Col>
-                        <Col md={4} sm={8} xs={11}>
+                        <Col md={4} sm={8} xs={11} className="text-warning">
+
+                            <Typewriter
+
+                                onInit={(typewriter) => {
+                                    typewriter
+                                        .typeString(" <h3> Welcome to Girish Suthar's Book Store Application.........! </h3>")
+                                        .pauseFor(1000)
+                                        .deleteAll()
+                                        .typeString("<h3> Welcome to Girish Suthar's Book Store Application.........! </h3>")
+                                        .start();
+                                }}
+                            />
                             <h3 className="text-white">
+
                                 Take advantage of our offers and purchase your
                                 desired book at the best prices!
                             </h3>
@@ -44,10 +58,10 @@ function HomePage() {
                         </Col>
                         <Col xs={7}></Col>
                     </Row>
-    
+
                 </main>
             </>
-            <FooterComponent/>
+            <FooterComponent />
         </>
     );
 }

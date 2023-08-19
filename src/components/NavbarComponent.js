@@ -55,7 +55,7 @@ function NavbarComponent(props) {
                                 height="40"
                                 
                             ></img>
-                            BT-BOOKSTORE
+                            GS-BOOKSTORE
                         </Navbar.Brand>
                     </LinkContainer>
                     {props.navStyle !== "simple" && (
@@ -133,7 +133,7 @@ function NavbarComponent(props) {
                                         </Button>
                                     ) : (
                                         <LinkContainer to="/auth/login">
-                                            <Button variant="warning">
+                                            <Button variant="success">
                                                 Login
                                             </Button>
                                         </LinkContainer>
